@@ -7,7 +7,12 @@ import Image from 'next/image';
 const name = 'EXPITC';
 export const siteTitle = 'Next.js Sample Website';
 
-export function Layout({ children, home }) {
+export function Layout({ children, home, color, app = false }) {
+  if (app) {
+    return (<>
+      <p style={{ color }}>APP</p>
+      <home>{children}</home></>)
+  }
   return (
     <div className={styles.container}>
       <Head>

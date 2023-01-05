@@ -5,7 +5,8 @@ export function Alert({ children, type = 'error' }) {
   return (
     <div
       className={clsx({
-        [styles.success]: type === 'success',
+        // [styles.success]: type === 'success',
+        ['text-orange-600']: type === 'success',
         [styles.error]: type === 'error'
       })}
     >
