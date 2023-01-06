@@ -6,17 +6,32 @@ import utilStyles from '../styles/utils.module.css'
 // -- If want page got render in server or Server-side Rendering then import & use
 // getServerSideProps() rather than getStaticProps()
 // but this study case is not best to use SSR(Server-side rendering) so we use SSG(Static-site generation)
-export async function getStaticProps() {
+/* export async function getStaticProps() {
   const allPostsData = getSortedPostData()
   return {
     props: {
       allPostsData
     }
   }
-}
+} */
 
-export default function Home({ allPostsData }) {
+/* async function getData() {
+  const res = await fetch('...', { cache: 'no-store' })
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
 
+  // Recommendation: handle errors
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+} */
+
+// export default function Home({ allPostsData }) {
+export default function Home() {
+  // const allPostsData = getData();
   return (
     <Layout home>
       <Head>
