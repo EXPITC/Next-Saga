@@ -8,4 +8,4 @@ This repository contains starter templates for [Learn Next.js](https://nextjs.or
 The final application can see on:
 
 - https://basics-blog-next-saga.vercel.app
-- not available yet 
+- https://seo-next-saga.vercel.app 
